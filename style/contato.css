@@ -1,0 +1,187 @@
+.contato{
+    background-color: var(--cor-primaria);
+    padding: 1em;
+    margin:0em 2em;
+}
+
+.contato_titulo,
+.contato_texto{
+    font-family: var(--fonte-forte);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+}
+.contato_titulo{
+    color: var( --cor-fonte);
+    font-size: 25px;
+    padding: 7px;
+}
+
+.contato_texto{
+    font-family: var(--fonte-fraca);
+    font-weight: 500;
+    margin: 2em 0;
+    color: var(--cor-fonte-branca);
+}
+.contato_email{
+    text-align: center;
+    padding: 1em;
+    border: 1px solid var(--cor-pesquisa);
+    border-radius: 20px;
+    width: 90%;
+    background-color: transparent;
+    color: var(--cor-fonte-fraca);  
+}
+
+.contato_email::placeholder{
+    font-family: var(--fonte-fraca);  
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-fonte-fraca);
+    background: url("../imagens/mail_black_24dp\ 1.svg") no-repeat;
+    background-position: 1em;
+  }
+
+.rodape{
+    background-color: var(--cor-secundaria);
+    padding: 1em;
+    font-family: var(--fonte-forte);
+    font-size: 30px;
+    text-align: center;
+}
+
+.rodape_titulo{
+    color: var(--cor-fonte-branca);
+}
+.lista_rodape{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .contato{
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+    .contato_email{
+        width: 80%;
+    }
+
+    .contato_titulo{
+        font-size: 40px;
+        color: var();
+    }
+    
+    .contato_texto{
+       margin-right:1em 0em;
+       font-size: 30px;
+       color: var(--cor-fonte-branca);
+    }
+
+   .contato_alinhamento{
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    }
+
+
+    
+    
+    .lista_rodape{
+        display: flex;
+    } 
+    
+    .rodape_imagem{
+        width: 2em;
+    }
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rodape_divisao{
+        flex-direction: column;
+    }
+
+    .lista_rodape{
+        flex-direction: column;
+        text-decoration: none;
+        align-items: center;
+        padding: 1em;
+        text-align: center;
+        justify-content: space-around;
+        padding: 5%;
+
+    }
+
+    .lista_rodape_item{
+        align-items: center;
+        display: flex;
+        padding: 0.5em;
+        margin: 0 1em;
+    }
+
+    .lista_rodape_link{
+        text-decoration: none;
+        color: var(--cor-fonte-fraca);
+    }
+
+    .lista_rodape_titulo{
+        font-size: 27px;
+        font-family: var(--fonte-clean);
+        font-weight: 900;
+        color: var(--cor-fonte-branca);
+    }
+    .rodape_titulo{
+        font-size: 40px;
+        font-weight: 500;
+        color: var(--cor-fonte-branca);
+    }
+   
+
+}
+
+
+
+@media screen and (min-width: 1600px){
+
+    .contato_email::placeholder{
+        font-size: 40px;
+        font-family: var(--fonte-clean);
+        background-position: 1em;
+        background-size: 5%;
+
+    }
+
+    .contato_emai{
+        width: 40%;
+        text-align: center;
+        padding: 3em;
+        border: 2px solid var(--cor-pesquisa);
+        border-radius: 10px;
+
+    }
+    
+    .lista_rodape_link:hover{
+        color: var(--cor-fonte);
+        font-size: 35px;
+        
+    }
+
+    .lista_rodape{
+        border-left: 2px solid var(--cor-fonte-fraca);
+        padding-left: 1em;
+
+    }
+    .rodape{
+        border-top: 3px solid var(--cor-fonte-fraca);
+    }
+
+
+
+}
+
+

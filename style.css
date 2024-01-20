@@ -1,0 +1,34 @@
+@import url("style/header.css");
+@import url("style/banner.css");
+@import url("style/carrosel.css");
+@import url("style/contato.css");
+
+:root{
+    --cor-primaria: #10032e;
+    --cor-secundaria: #1f0c64;
+    --cor-fonte-fraca: #ee9c99;
+    --cor-hover: #0d072e;
+    --cor-fonte: #fd8975;
+    --cor-fonte-branca:#e5f1ef;
+    --cor-pesquisa: #130138;
+    --cor-botao: #0b1cb39d;
+    --cor-botao-hover: #1e2fc9af;
+    --cor-fonte-seundaria: #34def5d0;
+    --azul-degrade: linear-gradient(97.54deg, #809dee 35.49%, #0b76bd 165.37%);
+    --fonte-forte: "Bebas Neue";
+    --fonte-fraca:"Poppins";
+    --fonte-clean:"Josefin Sans";
+
+}
+
+.tudao{
+    background-color: var(--cor-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-fraca);
+    
+    
+}
+.corpo_titulo{
+    color: var(--cor-fonte);
+}
